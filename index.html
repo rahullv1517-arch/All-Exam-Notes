@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rahul Notes</title>
+  <title>Rahul Notes Store</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f5f5;
+      text-align: center;
+    }
+    h1 {
+      background: #222;
+      color: white;
+      padding: 15px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      width: 200px;
+      margin: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .btn {
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      background: green;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:Arial;">
+<body>
 
-  <h1>📚 Rahul Notes</h1>
+<h1>📚 Rahul Notes Store</h1>
 
-  <p>B.Ed / Exam Notes PDF</p>
+<div class="container">
 
-  <h2>Price: ₹49</h2>
+  <!-- PDF 1 -->
+  <div class="card">
+    <img src="pdf1.png">
+    <h3>Psychology Notes</h3>
+    <p>₹49</p>
+    <a class="btn" href="upi://pay?pa=yourupi@upi&pn=Rahul&am=49">Buy Now</a>
+  </div>
 
-  <a href="upi://pay?pa=yourupi@upi&pn=Rahul&am=49" 
-     style="padding:10px 20px; background:green; color:white; text-decoration:none;">
-     Buy Now
-  </a>
+  <!-- PDF 2 -->
+  <div class="card">
+    <img src="pdf2.png">
+    <h3>Important Questions</h3>
+    <p>₹59</p>
+    <a class="btn" href="upi://pay?pa=yourupi@upi&pn=Rahul&am=59">Buy Now</a>
+  </div>
 
-  <p>Payment ke baad WhatsApp par screenshot bheje</p>
+  <!-- PDF 3 -->
+  <div class="card">
+    <img src="pdf3.png">
+    <h3>Guess Paper</h3>
+    <p>₹39</p>
+    <a class="btn" href="upi://pay?pa=yourupi@upi&pn=Rahul&am=39">Buy Now</a>
+  </div>
+
+</div>
 
 </body>
 </html>
